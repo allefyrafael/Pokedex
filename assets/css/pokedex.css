@@ -1,0 +1,258 @@
+.pokemons{
+    display: grid;
+    grid-template-columns: 1fr;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+.pokemon {
+    display: flex;
+    flex-direction: column;
+    margin: 0.5rem;
+    padding: 1rem;
+    border-radius: .8rem;
+    background-color: #49D0B0; 
+}
+
+
+
+/* Classe base para todos os tipos */
+.type {
+  color: #fff;
+  padding: .20em .5em;
+  margin: .20em 0;
+  font-size: .625em;
+  border-radius: 1em;
+  background-color: #61e1ca; /* Cor padrão */
+  filter: brightness(1.2);
+  text-align: center;
+}
+
+/* Estilos específicos para cada tipo */
+[data-type="grass"] {
+  background-color: #78C850; /* Verde */
+}
+
+[data-type="fire"] {
+  background-color: #F08030; /* Laranja */
+}
+
+[data-type="water"] {
+  background-color: #6890F0; /* Azul */
+}
+
+[data-type="electric"] {
+  background-color: #F8D030; /* Amarelo */
+}
+
+[data-type="ice"] {
+  background-color: #98D8D8; /* Azul claro */
+}
+
+[data-type="fighting"] {
+  background-color: #C03028; /* Vermelho escuro */
+}
+
+[data-type="poison"] {
+  background-color: #A040A0; /* Roxo */
+}
+
+[data-type="ground"] {
+  background-color: #E0C068; /* Marrom claro */
+}
+
+[data-type="flying"] {
+  background-color: #A890F0; /* Roxo claro */
+}
+
+[data-type="psychic"] {
+  background-color: #F85888; /* Rosa */
+}
+
+[data-type="bug"] {
+  background-color: #A8B820; /* Verde amarelado */
+}
+
+[data-type="rock"] {
+  background-color: #B8A038; /* Marrom */
+}
+
+[data-type="ghost"] {
+  background-color: #705898; /* Roxo escuro */
+}
+
+[data-type="dragon"] {
+  background-color: #7038F8; /* Roxo brilhante */
+}
+
+[data-type="dark"] {
+  background-color: #705848; /* Marrom escuro */
+}
+
+[data-type="steel"] {
+  background-color: #B8B8D0; /* Cinza */
+}
+
+[data-type="fairy"] {
+  background-color: #EE99AC; /* Rosa claro */
+}
+
+[data-type="normal"] {
+  background-color: #A8A878; /* Bege */
+}
+
+/* Estilos específicos para cada tipo com sufixo -A */
+[data-type="grass-A"] {
+  background-color: #4E8234; /* Verde escuro */
+}
+
+[data-type="fire-A"] {
+  background-color: #A84D20; /* Laranja escuro */
+}
+
+[data-type="water-A"] {
+  background-color: #4467A3; /* Azul escuro */
+}
+
+[data-type="electric-A"] {
+  background-color: #C49E27; /* Amarelo dourado escuro */
+}
+
+[data-type="ice-A"] {
+  background-color: #5B9A9A; /* Azul gelo escuro */
+}
+
+[data-type="fighting-A"] {
+  background-color: #8A2520; /* Vermelho sangue */
+}
+
+[data-type="poison-A"] {
+  background-color: #6C2B6C; /* Roxo escuro */
+}
+
+[data-type="ground-A"] {
+  background-color: #A68440; /* Marrom escuro */
+}
+
+[data-type="flying-A"] {
+  background-color: #6F5F9D; /* Roxo azulado escuro */
+}
+
+[data-type="psychic-A"] {
+  background-color: #B13661; /* Rosa escuro */
+}
+
+[data-type="bug-A"] {
+  background-color: #6A7410; /* Verde oliva */
+}
+
+[data-type="rock-A"] {
+  background-color: #7D6A21; /* Marrom rocha escuro */
+}
+
+[data-type="ghost-A"] {
+  background-color: #50345D; /* Roxo profundo */
+}
+
+[data-type="dragon-A"] {
+  background-color: #4B239E; /* Roxo real escuro */
+}
+
+[data-type="dark-A"] {
+  background-color: #4A3B2F; /* Marrom carvão */
+}
+
+[data-type="steel-A"] {
+  background-color: #6A6A87; /* Cinza escuro */
+}
+
+[data-type="fairy-A"] {
+  background-color: #BB6D7F; /* Rosa avermelhado */
+}
+
+[data-type="normal-A"] {
+  background-color: #6B6B4E; /* Bege escuro */
+}
+  
+
+
+.pokemon .number{
+    color: #000;
+    opacity: 0.3;
+    text-align: right;
+}
+
+.pokemon .name{
+    color: #fff;
+    margin: .20em 0;
+    font-size: .625em;
+    text-transform: capitalize;
+}
+
+.pokemon .detail{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.pokemon .detail .types{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+
+
+.pokemon .detail img{
+    max-width: 100%;
+    height: 70px;
+}
+
+.pagination{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 1rem;
+}
+
+.pagination button{
+  color: white;
+  margin: .20em 0;
+  font-size: .625em;
+  background-color: #6c79db;
+  border: none;
+  border-radius: 1.6rem;
+  padding: 1rem;
+}
+
+
+@media screen and (min-width: 380px){
+    .pokemons{
+        grid-template-columns: 1fr 1fr;
+    
+    }
+    
+    }
+
+@media screen and (min-width: 582px){
+    .pokemons{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 922px){
+    .pokemons{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    
+    }
+    
+    }
+
+
+
+
